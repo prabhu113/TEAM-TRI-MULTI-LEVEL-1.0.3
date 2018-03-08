@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.2" orientation="orthogonal" renderorder="right-down" width="83" height="12" tilewidth="70" tileheight="70" infinite="0" nextobjectid="201">
+ <tileset firstgid="1" name="sheet" tilewidth="70" tileheight="70" tilecount="98" columns="14">
+  <image source="sheet.png" width="980" height="490"/>
+ </tileset>
+ <tileset firstgid="99" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2" margin="2" tilecount="156" columns="12">
+  <image source="tiles_spritesheet.png" width="914" height="936"/>
+ </tileset>
+ <tileset firstgid="255" name="backgrounds" tilewidth="1920" tileheight="1080" tilecount="8" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="1920" height="1080" source="bckg/layer_01_1920 x 1080.png"/>
+  </tile>
+  <tile id="1">
+   <image width="1920" height="1080" source="bckg/layer_02_1920 x 1080.png"/>
+  </tile>
+  <tile id="2">
+   <image width="1920" height="1080" source="bckg/layer_03_1920 x 1080.png"/>
+  </tile>
+  <tile id="3">
+   <image width="1920" height="1080" source="bckg/layer_04_1920 x 1080.png"/>
+  </tile>
+  <tile id="4">
+   <image width="1920" height="1080" source="bckg/layer_05_1920 x 1080.png"/>
+  </tile>
+  <tile id="5">
+   <image width="1920" height="1080" source="bckg/layer_06_1920 x 1080.png"/>
+  </tile>
+  <tile id="6">
+   <image width="1920" height="1080" source="bckg/layer_07_1920 x 1080.png"/>
+  </tile>
+  <tile id="11">
+   <image width="1365" height="768" source="bckg/layer_08_1920 x 1080_fork.jpg"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="267" name="collectibles" tilewidth="30" tileheight="32" tilecount="1" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="30" height="32" source="Coin2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="269" name="collectibles" tilewidth="30" tileheight="30" tilecount="8" columns="8">
+  <image source="collectibles.png" width="240" height="30"/>
+ </tileset>
+ <tileset firstgid="277" name="enemies" tilewidth="71" tileheight="147" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="51" height="73" source="enemies/moreenemiesanimations/Enemy sprites/ghost.png"/>
+  </tile>
+  <tile id="1">
+   <image width="58" height="39" source="enemies/moreenemiesanimations/Enemy sprites/frog.png"/>
+  </tile>
+  <tile id="2">
+   <image width="71" height="70" source="enemies/moreenemiesanimations/Enemy sprites/grassBlock.png"/>
+  </tile>
+  <tile id="5">
+   <image width="53" height="147" source="enemies/moreenemiesanimations/Enemy sprites/snakeSlime.png"/>
+   <animation>
+    <frame tileid="5" duration="100"/>
+    <frame tileid="6" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="6">
+   <image width="52" height="147" source="enemies/moreenemiesanimations/Enemy sprites/snakeSlime_ani.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="sunset" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="8"/>
+   <property name="zindex" type="int" value="-30"/>
+  </properties>
+  <object id="52" gid="266" x="140" y="770" width="1365" height="768"/>
+  <object id="53" gid="266" x="1470" y="770" width="1365" height="768"/>
+  <object id="64" gid="266" x="2836.29" y="770.545" width="1365" height="768"/>
+  <object id="65" gid="266" x="4202.95" y="770.545" width="1365" height="768"/>
+  <object id="68" gid="266" x="5569.62" y="773.576" width="1365" height="768"/>
+ </objectgroup>
+ <objectgroup name="sun" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="7"/>
+   <property name="zindex" type="int" value="-29"/>
+  </properties>
+  <object id="55" gid="261" x="140" y="1050" width="1920" height="1080">
+   <properties>
+    <property name="zindex" type="int" value="-12"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="dark buildings2" locked="1" offsetx="0" offsety="70">
+  <properties>
+   <property name="paralax" type="int" value="6"/>
+   <property name="zindex" type="int" value="-28"/>
+  </properties>
+  <object id="31" gid="259" x="1964" y="800" width="1920" height="1080"/>
+  <object id="32" gid="259" x="56" y="788" width="1920" height="1080"/>
+  <object id="66" gid="259" x="3881.94" y="775.515" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="dark buildings1" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="5"/>
+   <property name="zindex" type="int" value="-26"/>
+  </properties>
+  <object id="28" gid="258" x="108" y="830" width="1920" height="1080"/>
+  <object id="29" gid="258" x="2024" y="854" width="1920" height="1080"/>
+  <object id="69" gid="258" x="3944" y="808" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="light buildings" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="4"/>
+   <property name="zindex" type="int" value="-25"/>
+  </properties>
+  <object id="72" gid="260" x="4890" y="1102" width="1920" height="1080"/>
+  <object id="73" gid="260" x="2976" y="1162" width="1920" height="1080"/>
+  <object id="75" gid="260" x="1152" y="1144" width="1920" height="1080"/>
+  <object id="76" gid="260" x="-754" y="1184" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="chicago" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="3"/>
+   <property name="zindex" type="int" value="-24"/>
+  </properties>
+  <object id="26" gid="257" x="-2" y="1050" width="1920" height="1080"/>
+  <object id="27" gid="257" x="1926" y="1062" width="1920" height="1080"/>
+  <object id="77" gid="257" x="3842" y="1066" width="1920" height="1080"/>
+ </objectgroup>
+ <objectgroup name="background1" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="1"/>
+   <property name="zindex" type="int" value="-22"/>
+  </properties>
+  <object id="20" gid="255" x="6" y="1008" width="2520" height="1080"/>
+  <object id="33" gid="255" x="1701" y="1008" width="2520" height="1080"/>
+  <object id="79" gid="255" x="3375" y="1007" width="2520" height="1080"/>
+ </objectgroup>
+ <objectgroup name="b_trees" locked="1">
+  <properties>
+   <property name="paralax" type="int" value="1"/>
+   <property name="zindex" type="int" value="-22"/>
+  </properties>
+  <object id="21" gid="256" x="-70" y="1050" width="1890" height="1080"/>
+  <object id="24" gid="256" x="1820" y="1050" width="1890" height="1080"/>
+ </objectgroup>
+ <layer name="buildings" width="83" height="12" locked="1">
+  <properties>
+   <property name="background" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3TSQoCMRAF0HIeNs7Dxnk4gSdwL3qBeAzpO3hpf6ACIVRaGhdRuz480nQXIXw6RBqNRqNJnQlMI2YJz/WLaUE7opPwXN+SIYwEY2FW6vJG2qVLHebQCDSFWdflkcrVZQ/6bJAzZ7sMe3zXZdnueAWqrJYzJ3V5Ju3Sj+3yBF0q3mXR/9Le83/ucgFLtoKr4AJr2Ai2wp472Ecc4PGBLFgdw+8y79uT17swH+7nPxthzkT2sHkBwbBxsZAPAAA=
+  </data>
+ </layer>
+ <layer name="doors_objects" width="83" height="12" locked="1">
+  <properties>
+   <property name="background" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgGAWjYBSMglEwCoYWiBloB4yCUUAmcCHAH+7AG4+cOg4aFwgiwB+OwBSIo2lgbgIB/ihgYOAlQg0fmWZ3k6lvqAJpHOJxSGwZejhkkAAAybPNZJAPAAA=
+  </data>
+ </layer>
+ <layer name="solid_tiles" width="83" height="12" locked="1">
+  <properties>
+   <property name="background" type="bool" value="true"/>
+   <property name="solid" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3QwQkAIAwEwTzUOtT+izT2sBAIO3D/YyNEmblVfaKBEbak2JJjS44tObbk2JJjS44tObbk/JYnd6uPNLBzD92ZPoSQDwAA
+  </data>
+ </layer>
+ <objectgroup name="exit" locked="1">
+  <properties>
+   <property name="exit_condition" type="int" value="0"/>
+  </properties>
+  <object id="80" gid="163" x="5669" y="771" width="70" height="70"/>
+ </objectgroup>
+ <objectgroup name="collectibles" locked="1">
+  <properties>
+   <property name="collectible" type="bool" value="true"/>
+  </properties>
+  <object id="100" gid="268" x="647" y="690" width="30" height="32"/>
+  <object id="101" gid="268" x="443" y="530" width="30" height="32"/>
+  <object id="122" gid="270" x="781.97" y="775.606" width="30" height="30"/>
+  <object id="123" gid="271" x="775.909" y="711.97" width="30" height="30"/>
+  <object id="124" gid="272" x="771.667" y="657.667" width="30" height="30"/>
+  <object id="125" gid="272" x="771.667" y="622.333" width="30" height="30"/>
+  <object id="126" gid="272" x="771.667" y="567" width="30" height="30"/>
+  <object id="127" gid="274" x="2075" y="701.667" width="30" height="30"/>
+  <object id="128" gid="274" x="2072.33" y="659.667" width="30" height="30"/>
+  <object id="129" gid="271" x="2072.33" y="835" width="30" height="30"/>
+  <object id="130" gid="276" x="2353.67" y="803.667" width="30" height="30"/>
+  <object id="131" gid="276" x="2463.67" y="819.667" width="30" height="30"/>
+  <object id="132" gid="276" x="2818.33" y="799.848" width="30" height="30"/>
+  <object id="133" gid="276" x="3818.33" y="833.182" width="30" height="30"/>
+  <object id="134" gid="276" x="4212.27" y="808.939" width="30" height="30"/>
+  <object id="135" gid="276" x="3130.45" y="821.061" width="30" height="30"/>
+  <object id="136" gid="273" x="3257.73" y="793.788" width="30" height="30"/>
+  <object id="137" gid="273" x="2918.33" y="827.121" width="30" height="30"/>
+  <object id="138" gid="273" x="3466.82" y="811.97" width="30" height="30"/>
+  <object id="139" gid="272" x="3033.48" y="808.939" width="30" height="30"/>
+  <object id="140" gid="272" x="3569.85" y="799.848" width="30" height="30"/>
+  <object id="141" gid="272" x="4066.82" y="790.758" width="30" height="30"/>
+  <object id="142" gid="272" x="1166.82" y="466.515" width="30" height="30"/>
+  <object id="143" gid="272" x="1209.24" y="463.485" width="30" height="30"/>
+  <object id="144" gid="272" x="1291.06" y="466.515" width="30" height="30"/>
+  <object id="145" gid="272" x="1333.48" y="469.545" width="30" height="30"/>
+  <object id="146" gid="270" x="1412.27" y="466.515" width="30" height="30"/>
+  <object id="147" gid="270" x="1481.97" y="396.818" width="30" height="30"/>
+  <object id="148" gid="270" x="1472.88" y="351.364" width="30" height="30"/>
+  <object id="149" gid="270" x="1469.85" y="275.606" width="30" height="30"/>
+  <object id="173" gid="274" x="4572" y="565" width="30" height="30"/>
+  <object id="174" gid="274" x="4568" y="524" width="30" height="30"/>
+  <object id="175" gid="274" x="4570" y="485" width="30" height="30"/>
+  <object id="176" gid="274" x="4559" y="424" width="30" height="30"/>
+  <object id="177" gid="276" x="4718" y="557" width="30" height="30"/>
+  <object id="178" gid="276" x="4717" y="523" width="30" height="30"/>
+  <object id="179" gid="276" x="4712" y="480" width="30" height="30"/>
+  <object id="180" gid="271" x="4430" y="616" width="30" height="30"/>
+  <object id="181" gid="271" x="4429" y="553" width="30" height="30"/>
+  <object id="182" gid="271" x="4428" y="491" width="30" height="30"/>
+ </objectgroup>
+ <objectgroup name="solid layer" locked="1">
+  <properties>
+   <property name="solid" type="bool" value="true"/>
+  </properties>
+  <object id="13" gid="231" x="420" y="700" width="70" height="70"/>
+  <object id="16" gid="231" x="630" y="770" width="70" height="70"/>
+  <object id="43" gid="99" x="1050" y="630" width="70" height="70"/>
+  <object id="44" gid="99" x="1120" y="560" width="140" height="70"/>
+  <object id="45" gid="99" x="1260" y="560" width="70" height="70"/>
+  <object id="46" gid="99" x="1400" y="560" width="70" height="70"/>
+  <object id="47" gid="99" x="1470" y="490" width="70" height="70"/>
+  <object id="48" gid="111" x="980" y="770" width="70" height="70"/>
+  <object id="49" gid="111" x="840" y="770" width="70" height="70"/>
+  <object id="168" gid="179" x="5241" y="781" width="70" height="70"/>
+  <object id="169" gid="179" x="4823" y="722" width="70" height="70"/>
+  <object id="170" gid="179" x="4689" y="639" width="70" height="70"/>
+  <object id="171" gid="179" x="4557" y="648" width="70" height="70"/>
+  <object id="172" gid="179" x="4406" y="714" width="70" height="70"/>
+  <object id="183" gid="155" x="4302" y="766" width="70" height="70"/>
+  <object id="184" gid="179" x="4122" y="769" width="70" height="70"/>
+  <object id="192" gid="190" x="4904" y="835" width="70" height="70"/>
+  <object id="193" gid="190" x="4970" y="766" width="70" height="70"/>
+  <object id="194" gid="190" x="5045" y="801" width="70" height="70"/>
+  <object id="195" gid="190" x="5116" y="765" width="70" height="70"/>
+  <object id="196" gid="190" x="5185" y="687" width="70" height="70"/>
+  <object id="197" gid="190" x="5303" y="629" width="70" height="70"/>
+ </objectgroup>
+ <objectgroup name="agressive_enemies">
+  <properties>
+   <property name="can_jump" type="bool" value="true"/>
+   <property name="can_shoot" type="bool" value="true"/>
+   <property name="enemy" type="bool" value="true"/>
+  </properties>
+  <object id="153" gid="279" x="2551" y="838" width="71" height="70"/>
+  <object id="154" gid="282" x="3135.5" y="533.5" width="53" height="147"/>
+  <object id="161" gid="278" x="1876" y="828" width="58" height="39"/>
+  <object id="162" gid="278" x="983" y="697" width="58" height="39"/>
+  <object id="198" gid="278" x="5399" y="835" width="58" height="39"/>
+  <object id="199" gid="278" x="5312" y="554" width="58" height="39"/>
+  <object id="200" gid="278" x="5191" y="612" width="58" height="39"/>
+ </objectgroup>
+ <objectgroup name="slow_glider_enemies" locked="1">
+  <properties>
+   <property name="can_jump" type="bool" value="false"/>
+   <property name="can_shoot" type="bool" value="false"/>
+   <property name="enemy" type="bool" value="true"/>
+  </properties>
+  <object id="165" gid="277" x="1059" y="554" width="51" height="73"/>
+  <object id="166" gid="277" x="5062" y="724" width="51" height="73"/>
+  <object id="167" gid="277" x="5636" y="677" width="51" height="73"/>
+  <object id="185" gid="279" x="4211" y="766" width="71" height="70"/>
+ </objectgroup>
+ <objectgroup name="BOSSES" locked="1">
+  <properties>
+   <property name="can_shoot" type="bool" value="true"/>
+   <property name="enemy" type="bool" value="true"/>
+   <property name="hp" type="int" value="300"/>
+  </properties>
+  <object id="158" gid="282" x="5574" y="791" width="53" height="147"/>
+ </objectgroup>
+</map>

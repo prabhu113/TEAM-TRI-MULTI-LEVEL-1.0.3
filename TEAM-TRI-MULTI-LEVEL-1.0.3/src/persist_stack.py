@@ -1,0 +1,3 @@
+class PersistStack:
+    pass
+
